@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       logoUrl: process.env.LOGO_URL,
+      githubUrl: process.env.GITHUB_URL,
     },
   },
 });

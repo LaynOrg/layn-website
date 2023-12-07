@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { LinkProps } from '~/types'
 
+const config = useRuntimeConfig()
 const colorMode = useColorMode()
 const { locale } = useI18n()
 
@@ -45,7 +46,8 @@ const links: LinkProps[] = [
                     </p>
                 </template>
             </USelectMenu>
-            <UButton icon="i-simple-icons-github" variant="ghost" color="gray" />
+            <UButton icon="i-simple-icons-github" variant="ghost" color="gray" :to="config.public.githubUrl"
+                target="_blank" />
             <ClientOnly>
                 <UButton :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'" aria-label="Theme"
                     variant="ghost" color="gray" @click="isDark = !isDark" />
