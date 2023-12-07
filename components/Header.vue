@@ -20,11 +20,15 @@ const links: LinkProps[] = [
         label: "headerLinks.0"
     },
     {
-        href: "#team",
+        href: "#solution-partners",
         label: "headerLinks.1"
+    },
+    {
+        href: "#team",
+        label: "headerLinks.2"
     }, {
         href: "#contact",
-        label: "headerLinks.2"
+        label: "headerLinks.3"
     }
 ]
 

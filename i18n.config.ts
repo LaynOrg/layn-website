@@ -3,7 +3,7 @@ export default defineI18nConfig(() => ({
   locale: "tr",
   messages: {
     tr: {
-      headerLinks: ["Çözümler", "Takım", "İletişim"],
+      headerLinks: ["Çözümler", "Çözüm Ortakları", "Takım", "İletişim"],
       heroHeader: {
         title: "Hayallerinizi inşa ediyoruz",
         description:
@@ -25,7 +25,7 @@ export default defineI18nConfig(() => ({
       },
     },
     en: {
-      headerLinks: ["Solutions", "Team", "Contact"],
+      headerLinks: ["Solutions", "Solution Partners", "Team", "Contact"],
       heroHeader: {
         title: "We build your dreams",
         description:
