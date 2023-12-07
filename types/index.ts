@@ -10,3 +10,8 @@ export type SolutionProps = {
   href?: string;
   image: string;
 };
+
+export type TeamMemberProps = {
+  name: string;
+  image: string;
+};

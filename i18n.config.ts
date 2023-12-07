@@ -28,6 +28,7 @@ export default defineI18nConfig(() => ({
         description:
           "İşte hayallerini inşa ettiğimiz çözüm ortaklarımız. Siz de Layn ekibi ile hayallerinizi gerçekleştirmek istiyorsanız bizimle iletişime geçin.",
       },
+      team: { title: "Takımımız", moreInfo: "Daha Fazla Bilgi" },
     },
     en: {
       headerLinks: ["Solutions", "Solution Partners", "Team", "Contact"],
@@ -55,6 +56,7 @@ export default defineI18nConfig(() => ({
         description:
           "Here are our solution partners whose dreams we built. If you want to realize your dreams with the Layn team, contact us.",
       },
+      team: { title: "Our Team", moreInfo: "More Info" },
     },
   },
 }));
