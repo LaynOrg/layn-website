@@ -26,9 +26,14 @@ const links: LinkProps[] = [
     {
         href: "#team",
         label: "headerLinks.2"
-    }, {
-        href: "#contact",
+    },
+    {
+        href: "#support",
         label: "headerLinks.3"
+    },
+    {
+        href: "#contact",
+        label: "headerLinks.4"
     }
 ]
 
