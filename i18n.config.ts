@@ -35,6 +35,12 @@ export default defineI18nConfig(() => ({
           "İşte hayallerini inşa ettiğimiz çözüm ortaklarımız. Siz de Layn ekibi ile hayallerinizi gerçekleştirmek istiyorsanız bizimle iletişime geçin.",
       },
       team: { title: "Takımımız", moreInfo: "Daha Fazla Bilgi" },
+      support: {
+        title: "Bizi Destekleyin",
+        description:
+          "Sizlere daha iyi hizmet verebilmemiz için bize destek olabilirsiniz.",
+        button: "Bubi için havuç al",
+      },
     },
     en: {
       headerLinks: [
@@ -69,6 +75,11 @@ export default defineI18nConfig(() => ({
           "Here are our solution partners whose dreams we built. If you want to realize your dreams with the Layn team, contact us.",
       },
       team: { title: "Our Team", moreInfo: "More Info" },
+      support: {
+        title: "Support Us",
+        description: "You can support us so that we can serve you better.",
+        button: "Buy a carrot for Bubi",
+      },
     },
   },
 }));

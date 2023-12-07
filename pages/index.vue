@@ -3,4 +3,5 @@
     <Solutions />
     <SolutionPartners />
     <Team />
+    <Support />
 </template>

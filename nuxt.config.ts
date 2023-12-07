@@ -6,6 +6,7 @@ export default defineNuxtConfig({
       lisanslyLogoUrl: process.env.LISANSLY_LOGO_URL,
       lisanslyUrl: process.env.LISANSLY_URL,
       githubUrl: process.env.GITHUB_URL,
+      supportUrl: process.env.SUPPORT_URL,
       hayyingUrl: process.env.HAYYING_URL,
     },
   },
