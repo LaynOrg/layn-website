@@ -4,4 +4,5 @@
 
 <template>
     <HeroHeader />
+    <Solutions />
 </template>
