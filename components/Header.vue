@@ -27,11 +27,6 @@ const links: LinkProps[] = [
     }
 ]
 
-const options: string[] = [
-    'tr',
-    'en',
-]
-
 </script>
 
 <template>
@@ -43,7 +38,7 @@ const options: string[] = [
                 :label="$t(link.label)" class="hidden sm:block" />
         </div>
         <div>
-            <USelectMenu v-model="locale" :options="options" class="uppercase w-16" size="xs">
+            <USelectMenu v-model="locale" :options="['tr', 'en']" class="uppercase w-16" size="xs">
                 <template #label>
                     <p class="uppercase">
                         {{ locale }}
