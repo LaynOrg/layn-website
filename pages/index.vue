@@ -2,4 +2,6 @@
 
 </script>
 
-<template></template>
+<template>
+    <HeroHeader />
+</template>
