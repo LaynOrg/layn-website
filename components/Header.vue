@@ -40,7 +40,7 @@ const links: LinkProps[] = [
         <div>
             <Logo />
             <UButton v-for=" link in links" :key="link.href" :to="link.href" variant="ghost" color="gray"
-                :label="$t(link.label)" class="hidden sm:block" />
+                :label="$t(link.label)" class="hidden md:block" />
         </div>
         <div>
             <USelectMenu v-model="locale" :options="['tr', 'en']" class="uppercase w-16" size="xs">
