@@ -44,8 +44,10 @@ const links: LinkProps[] = [
         class="py-5 flex justify-between items-center [&>div]:gap-2 [&>div]:flex [&>div]:items-center sm:[&>div]:gap-5">
         <div>
             <Logo />
-            <UButton v-for=" link in links" :key="link.href" :to="link.href" variant="ghost" color="gray"
-                :label="$t(link.label)" class="hidden md:block" />
+            <div class="hidden md:flex gap-2">
+                <UButton v-for=" link in links" :key="link.href" :to="link.href" variant="ghost" color="gray"
+                    :label="$t(link.label)" />
+            </div>
         </div>
         <div>
             <USelectMenu v-model="locale" :options="['tr', 'en']" class="uppercase w-16" size="xs">
