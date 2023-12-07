@@ -23,6 +23,11 @@ export default defineI18nConfig(() => ({
         visit: "Ziyaret Et",
         comingSoon: "Çok Yakında",
       },
+      solutionPartners: {
+        title: "Çözüm Ortaklarımız",
+        description:
+          "İşte hayallerini inşa ettiğimiz çözüm ortaklarımız. Siz de Layn ekibi ile hayallerinizi gerçekleştirmek istiyorsanız bizimle iletişime geçin.",
+      },
     },
     en: {
       headerLinks: ["Solutions", "Solution Partners", "Team", "Contact"],
@@ -44,6 +49,11 @@ export default defineI18nConfig(() => ({
         ],
         visit: "Visit",
         comingSoon: "Coming Soon",
+      },
+      solutionPartners: {
+        title: "Our Solution Partners",
+        description:
+          "Here are our solution partners whose dreams we built. If you want to realize your dreams with the Layn team, contact us.",
       },
     },
   },
