@@ -11,6 +11,7 @@ export default defineI18nConfig(() => ({
         solutions: "Çözümleri Görün",
         contact: "İletişime Geçin",
       },
+      logoTooltip: "Merhaba! Ben Bubi.",
     },
     en: {
       headerLinks: ["Solutions", "Team", "Contact"],
@@ -21,6 +22,7 @@ export default defineI18nConfig(() => ({
         solutions: "See Solutions",
         contact: "Contact Us",
       },
+      logoTooltip: "Hello! I'm Bubi.",
     },
   },
 }));

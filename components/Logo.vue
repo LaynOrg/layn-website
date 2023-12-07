@@ -5,7 +5,9 @@ const config = useRuntimeConfig()
 
 <template>
     <div class="flex items-center flex-nowrap gap-2">
-        <img :src="config.public.logoUrl" alt="logo" class="w-7 h-7 object-contain" />
+        <UTooltip :text="$t('logoTooltip')" :popper="{ arrow: true }">
+            <img :src="config.public.logoUrl" alt="logo" class="w-7 h-7 object-contain" />
+        </UTooltip>
         <h1 class="font-bold">
             Layn
         </h1>
