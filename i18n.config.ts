@@ -41,7 +41,7 @@ export default defineI18nConfig(() => ({
         "Solutions",
         "Solution Partners",
         "Team",
-        "Destek",
+        "Support",
         "Contact",
       ],
       heroHeader: {
