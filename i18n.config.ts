@@ -41,6 +41,17 @@ export default defineI18nConfig(() => ({
           "Sizlere daha iyi hizmet verebilmemiz için bize destek olabilirsiniz.",
         button: "Bubi için havuç al",
       },
+      contact: {
+        title: "İletişime Geçin",
+        description: "Bize ulaşmak için aşağıdaki yolları kullanabilirsiniz.",
+        discordDescription:
+          "  Discord sunucumuzda sohbet edebilir, çözümlerimiz hakkında soru sorabilirsiniz. İnşa etmemizi istediğiniz projeniz hakkında bizimle iletişime geçebilirsiniz.",
+        email: {
+          title: "E-posta",
+          description:
+            "E-posta adresimizden bizimle iletişime geçebilirsiniz. İnşa etmemizi istediğiniz projeniz hakkında bizimle iletişime geçebilirsiniz.",
+        },
+      },
     },
     en: {
       headerLinks: [
@@ -79,6 +90,17 @@ export default defineI18nConfig(() => ({
         title: "Support Us",
         description: "You can support us so that we can serve you better.",
         button: "Buy a carrot for Bubi",
+      },
+      contact: {
+        title: "Contact Us",
+        description: "You can contact us using the following methods.",
+        discordDescription:
+          "You can chat on our Discord server and ask questions about our solutions. You can contact us about the project you want us to build.",
+        email: {
+          title: "E-mail",
+          description:
+            "You can contact us via our e-mail address. You can contact us about the project you want us to build.",
+        },
       },
     },
   },

@@ -7,6 +7,8 @@ export default defineNuxtConfig({
       lisanslyUrl: process.env.LISANSLY_URL,
       githubUrl: process.env.GITHUB_URL,
       supportUrl: process.env.SUPPORT_URL,
+      discordUrl: process.env.DISCORD_URL,
+      emailAddress: process.env.EMAIL_ADDRESS,
       hayyingUrl: process.env.HAYYING_URL,
     },
   },
