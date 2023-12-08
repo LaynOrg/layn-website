@@ -12,9 +12,7 @@ const teamMembers: TeamMemberProps[] = [
     }
 ]
 
-const href = (name: string) => computed(() => `https://${name.toLocaleLowerCase()}.dev`)
-
-</script>
+</script> 
 
 <template>
     <section class="mt-72 text-center" id="team">
@@ -25,8 +23,8 @@ const href = (name: string) => computed(() => `https://${name.toLocaleLowerCase(
                 <h1 class="text-2xl font-semibold ">
                     {{ teamMember.name }}
                 </h1>
-                <UButton block variant="link" :label="$t('team.moreInfo')" :to="href(teamMember.name).value"
-                    target="_blank" />
+                <UButton block variant="link" :label="$t('team.moreInfo')"
+                    :to="`https://${teamMember.name.toLocaleLowerCase()}.dev`" target="_blank" />
             </UCard>
         </div>
     </section>
