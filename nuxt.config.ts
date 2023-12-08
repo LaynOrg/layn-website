@@ -1,5 +1,6 @@
 export default defineNuxtConfig({
   modules: ["@nuxt/ui", "@nuxtjs/i18n"],
+  css: ["~/assets/css/main.css"],
   runtimeConfig: {
     public: {
       logoUrl: process.env.LOGO_URL,
