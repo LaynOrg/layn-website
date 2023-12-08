@@ -52,6 +52,7 @@ export default defineI18nConfig(() => ({
             "E-posta adresimizden bizimle iletişime geçebilirsiniz. İnşa etmemizi istediğiniz projeniz hakkında bizimle iletişime geçebilirsiniz.",
         },
       },
+      footerQuote: '"Basit yapmak, kompleks yapmaktan daha zordur."',
     },
     en: {
       headerLinks: [
@@ -102,6 +103,7 @@ export default defineI18nConfig(() => ({
             "You can contact us via our e-mail address. You can contact us about the project you want us to build.",
         },
       },
+      footerQuote: '"Making simple is harder than making complex."',
     },
   },
 }));
