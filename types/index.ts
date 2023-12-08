@@ -15,3 +15,11 @@ export type TeamMemberProps = {
   name: string;
   image: string;
 };
+
+export type ContactInfoProps = {
+  name: string;
+  description: string;
+  href: string;
+  icon: string;
+  color: string;
+};

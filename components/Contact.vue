@@ -1,10 +1,28 @@
 <script setup lang="ts">
+import type { ContactInfoProps } from '~/types';
+
 const config = useRuntimeConfig()
-const emailHref = computed(() => `mailto:${config.public.emailAddress}`)
 
 const ui = {
     base: "hover:shadow-xl transition-all duration-300 hover:scale-[1.02] ring-0",
 }
+
+const contactInfos: ContactInfoProps[] = [
+    {
+        name: "Discord",
+        description: "contact.discordDescription",
+        icon: "i-simple-icons-discord",
+        href: config.public.discordUrl,
+        color: "[#7289da]",
+    },
+    {
+        name: "contact.email.title",
+        description: "contact.email.description",
+        icon: "i-simple-icons-maildotru",
+        href: `mailto:${config.public.emailAddress}`,
+        color: "red-500",
+    },
+]
 
 </script>
 
@@ -15,22 +33,16 @@ const ui = {
             {{ $t("contact.description") }}
         </p>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 text-white">
-            <UCard class="bg-[#7289da] dark:bg-[#7289da]" as="a" :href="config.public.discordUrl" target="_blank" :ui="ui">
+            <UCard v-for="contactInfo in contactInfos" :class="`bg-${contactInfo.color} dark:bg-${contactInfo.color}`"
+                :ui="ui" as="a" :href="contactInfo.href" target="_blank" :key="contactInfo.name">
                 <div class="flex items-center gap-5 mb-4">
-                    <UIcon name="i-simple-icons-discord" class="text-4xl" />
-                    <h1 class="text-2xl font-bold">Discord</h1>
+                    <UIcon :name="contactInfo.icon" class="text-4xl" />
+                    <h1 class="text-2xl font-bold">
+                        {{ $t(contactInfo.name) }}
+                    </h1>
                 </div>
                 <p class="font-semibold">
-                    {{ $t("contact.discordDescription") }}
-                </p>
-            </UCard>
-            <UCard class="bg-red-500 dark:bg-red-500" as="a" :href="emailHref" target="_blank" :ui="ui">
-                <div class="flex items-center gap-5 mb-4">
-                    <UIcon name="i-simple-icons-maildotru" class="text-4xl" />
-                    <h1 class="text-2xl font-bold">{{ $t("contact.email.title") }}</h1>
-                </div>
-                <p class="font-semibold">
-                    {{ $t("contact.email.description") }}
+                    {{ $t(contactInfo.description) }}
                 </p>
             </UCard>
         </div>
