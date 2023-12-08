@@ -7,7 +7,7 @@ export default defineI18nConfig(() => ({
         "Çözümler",
         "Çözüm Ortakları",
         "Takım",
-        "Destek",
+        "Bağış",
         "İletişim",
       ],
       heroHeader: {
@@ -35,10 +35,10 @@ export default defineI18nConfig(() => ({
           "İşte hayallerini inşa ettiğimiz çözüm ortaklarımız. Siz de Layn ekibi ile hayallerinizi gerçekleştirmek istiyorsanız bizimle iletişime geçin.",
       },
       team: { title: "Takımımız", moreInfo: "Daha Fazla Bilgi" },
-      support: {
-        title: "Bizi Destekleyin",
+      donate: {
+        title: "Bağış",
         description:
-          "Sizlere daha iyi hizmet verebilmemiz için bize destek olabilirsiniz.",
+          "Sizlere daha iyi hizmet verebilmemiz için bize bağış yapabilirsiniz.",
         button: "Bubi için havuç al",
       },
       contact: {
@@ -59,7 +59,7 @@ export default defineI18nConfig(() => ({
         "Solutions",
         "Solution Partners",
         "Team",
-        "Support",
+        "Donate",
         "Contact",
       ],
       heroHeader: {
@@ -87,9 +87,9 @@ export default defineI18nConfig(() => ({
           "Here are our solution partners whose dreams we built. If you want to realize your dreams with the Layn team, contact us.",
       },
       team: { title: "Our Team", moreInfo: "More Info" },
-      support: {
-        title: "Support Us",
-        description: "You can support us so that we can serve you better.",
+      donate: {
+        title: "Donate",
+        description: "You can donate us so that we can serve you better.",
         button: "Buy a carrot for Bubi",
       },
       contact: {

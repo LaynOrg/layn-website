@@ -3,6 +3,6 @@
     <Solutions />
     <SolutionPartners />
     <Team />
-    <Support />
+    <Donate />
     <Contact />
 </template>

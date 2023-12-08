@@ -28,7 +28,7 @@ const links: LinkProps[] = [
         label: "headerLinks.2"
     },
     {
-        href: "#support",
+        href: "#donate",
         label: "headerLinks.3"
     },
     {
