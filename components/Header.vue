@@ -40,7 +40,7 @@ const links: LinkProps[] = [
 </script>
 
 <template>
-    <div class="py-5 flex justify-between items-center [&>div]:gap-2 [&>div]:flex [&>div]:items-center sm:[&>div]:gap-5">
+    <header class="py-5 flex justify-between items-center [&>div]:gap-2 [&>div]:flex [&>div]:items-center sm:[&>div]:gap-5">
         <div>
             <Logo />
             <div class="hidden md:flex gap-2">
@@ -66,6 +66,6 @@ const links: LinkProps[] = [
                 </template>
             </ClientOnly>
         </div>
-    </div>
+    </header>
 </template>
 
