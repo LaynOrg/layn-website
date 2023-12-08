@@ -3,9 +3,10 @@ import type { ContactInfoProps } from '~/types';
 
 const config = useRuntimeConfig()
 
-const ui = {
+const ui = (color: string) => ({
     base: "hover:shadow-xl transition-all duration-300 hover:scale-[1.02] ring-0",
-}
+    background: `bg-${color} dark:bg-${color}`
+})
 
 const contactInfos: ContactInfoProps[] = [
     {
@@ -13,7 +14,7 @@ const contactInfos: ContactInfoProps[] = [
         description: "contact.discordDescription",
         icon: "i-simple-icons-discord",
         href: config.public.discordUrl,
-        color: "[#7289da]",
+        color: "blue-500",
     },
     {
         name: "contact.email.title",
@@ -33,8 +34,8 @@ const contactInfos: ContactInfoProps[] = [
             {{ $t("contact.description") }}
         </p>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 text-white">
-            <UCard v-for="contactInfo in contactInfos" :class="`bg-${contactInfo.color} dark:bg-${contactInfo.color}`"
-                :ui="ui" as="a" :href="contactInfo.href" target="_blank" :key="contactInfo.name">
+            <UCard v-for="contactInfo in contactInfos" :ui="ui(contactInfo.color)" as="a" :href="contactInfo.href"
+                target="_blank" :key="contactInfo.name">
                 <div class="flex items-center gap-5 mb-4">
                     <UIcon :name="contactInfo.icon" class="text-4xl" />
                     <h1 class="text-2xl font-bold">
