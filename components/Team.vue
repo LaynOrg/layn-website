@@ -17,7 +17,7 @@ const href = (name: string) => computed(() => `https://${name.toLocaleLowerCase(
 </script>
 
 <template>
-    <div class="mt-72 text-center">
+    <section class="mt-72 text-center" id="team">
         <h1 class="text-3xl font-bold mb-10">{{ $t("team.title") }}</h1>
         <div class="flex flex-wrap gap-10 justify-center">
             <UCard :ui="{ body: { base: 'grid gap-3' } }" v-for="teamMember in teamMembers" :key="teamMember.name">
@@ -29,5 +29,5 @@ const href = (name: string) => computed(() => `https://${name.toLocaleLowerCase(
                     target="_blank" />
             </UCard>
         </div>
-    </div>
+    </section>
 </template>

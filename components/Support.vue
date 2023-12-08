@@ -3,7 +3,7 @@ const config = useRuntimeConfig()
 </script>
 
 <template>
-    <div class="max-w-2xl m-auto mt-72">
+    <section class="max-w-2xl m-auto mt-72" id="support">
         <h1 class="text-3xl font-bold mb-3">
             {{ $t("support.title") }}
         </h1>
@@ -18,5 +18,5 @@ const config = useRuntimeConfig()
                 <UIcon name="i-heroicons-heart-solid" class="text-red-500 text-4xl absolute -bottom-3 right-0" />
             </div>
         </div>
-    </div>
+    </section>
 </template>

@@ -4,7 +4,7 @@ const emailHref = computed(() => `mailto:${config.public.emailAddress}`)
 </script>
 
 <template>
-    <div class="my-72">
+    <section class="my-72" id="contact">
         <h1 class="text-3xl font-bold mb-3">{{ $t("contact.title") }}</h1>
         <p class="text-gray-500 dark:text-gray-400 text-lg mb-10 font-semibold">
             {{ $t("contact.description") }}
@@ -29,5 +29,5 @@ const emailHref = computed(() => `mailto:${config.public.emailAddress}`)
                 </p>
             </UCard>
         </div>
-    </div>
+    </section>
 </template>

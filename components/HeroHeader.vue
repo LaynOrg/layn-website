@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-40 sm:mt-52 justify-center grid text-center">
+    <section class="mt-40 sm:mt-52 justify-center grid text-center">
         <h1 class="text-5xl font-bold mb-4">
             {{ $t('heroHeader.title') }}
         </h1>
@@ -7,12 +7,12 @@
             {{ $t('heroHeader.description') }}
         </p>
         <div class="flex flex-wrap justify-center gap-4 mt-10">
-            <UButton color="black" size="xl">
+            <UButton color="black" size="xl" to="#solutions">
                 {{ $t('heroHeader.solutions') }}
             </UButton>
-            <UButton size="xl">
+            <UButton size="xl" to="#contact">
                 {{ $t('heroHeader.contact') }}
             </UButton>
         </div>
-    </div>
+    </section>
 </template>

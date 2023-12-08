@@ -20,7 +20,7 @@ const solutions: SolutionProps[] = [
 </script>
 
 <template>
-    <div class="mt-72">
+    <section class="mt-72" id="solutions">
         <h1 class="text-3xl font-bold mb-3">{{ $t("solutions.title") }}</h1>
         <p class="text-gray-500 dark:text-gray-400 text-lg mb-10 font-semibold">
             {{ $t("solutions.description") }}
@@ -39,5 +39,5 @@ const solutions: SolutionProps[] = [
                 <UButton v-else block size="md" :to="solution.href" target="_blank" :label="$t('solutions.visit')" />
             </UCard>
         </div>
-    </div>
+    </section>
 </template>
