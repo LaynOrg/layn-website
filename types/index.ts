@@ -16,10 +16,8 @@ export type TeamMemberProps = {
   image: string;
 };
 
-export type ContactInfoProps = {
-  name: string;
+export type ContactInfoProps =LinkProps & {
   description: string;
-  href: string;
   icon: string;
   color: string;
 };

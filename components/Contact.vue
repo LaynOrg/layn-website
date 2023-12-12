@@ -3,27 +3,27 @@ import type { ContactInfoProps } from '~/types';
 
 const config = useRuntimeConfig()
 
-const ui = (color: string) => ({
-    base: "hover:shadow-xl transition-all duration-300 hover:scale-[1.02] ring-0",
-    background: `bg-${color} dark:bg-${color}`
-})
-
 const contactInfos: ContactInfoProps[] = [
     {
-        name: "Discord",
+        label: "Discord",
         description: "contact.discordDescription",
         icon: "i-simple-icons-discord",
         href: config.public.discordUrl,
-        color: "blue-500",
+        color: "blue",
     },
     {
-        name: "contact.email.title",
+        label: "contact.email.title",
         description: "contact.email.description",
         icon: "i-simple-icons-maildotru",
         href: `mailto:${config.public.emailAddress}`,
-        color: "red-500",
+        color: "red",
     },
 ]
+
+const colors: Record<string, string> = {
+    red: 'bg-red-500 dark:bg-red-500',
+    blue: 'bg-[#7289da] dark:bg-[#7289da]',
+}
 
 </script>
 
@@ -34,16 +34,17 @@ const contactInfos: ContactInfoProps[] = [
             {{ $t("contact.description") }}
         </p>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 text-white">
-            <UCard v-for="contactInfo in contactInfos" :ui="ui(contactInfo.color)" as="a" :href="contactInfo.href"
-                target="_blank" :key="contactInfo.name">
+            <UCard v-for="{color,description,href,icon,label} in contactInfos" :class="colors[color]"
+                :ui="{ base: 'hover:shadow-xl transition-all duration-300 hover:scale-[1.02] ring-0' }" as="a"
+                :href="href" target="_blank" :key="href">
                 <div class="flex items-center gap-5 mb-4">
-                    <UIcon :name="contactInfo.icon" class="text-4xl" />
+                    <UIcon :name="icon" class="text-4xl" />
                     <h1 class="text-2xl font-bold">
-                        {{ $t(contactInfo.name) }}
+                        {{ $t(label) }}
                     </h1>
                 </div>
                 <p class="font-semibold">
-                    {{ $t(contactInfo.description) }}
+                    {{ $t(description) }}
                 </p>
             </UCard>
         </div>

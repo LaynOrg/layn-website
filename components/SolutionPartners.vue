@@ -19,8 +19,8 @@ const solutionPartners: LinkProps[] = [
             {{ $t("solutionPartners.description") }}
         </p>
         <div class="flex flex-wrap justify-center gap-5">
-            <UButton v-for="solutionPartner in solutionPartners" :key="solutionPartner.href" :to="solutionPartner.href"
-                target="_blank" variant="soft" size="xl" :label="solutionPartner.label" />
+            <UButton v-for="{href,label} in solutionPartners" :key="href" :to="href"
+                target="_blank" variant="soft" size="xl" :label="label" />
         </div>
     </section>
 </template>

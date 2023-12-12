@@ -44,8 +44,8 @@ const links: LinkProps[] = [
         <div>
             <Logo />
             <div class="hidden md:flex gap-2">
-                <UButton v-for=" link in links" :key="link.href" :to="link.href" variant="ghost" color="gray"
-                    :label="$t(link.label)" />
+                <UButton v-for=" { href, label } in links" :key="href" :to="href" variant="ghost" color="gray"
+                    :label="$t(label)" />
             </div>
         </div>
         <div>
